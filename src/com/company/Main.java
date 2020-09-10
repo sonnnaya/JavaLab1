@@ -7,10 +7,16 @@ public class Main
 {
     public static void main(String[] args)
     {
-        String sequency = "dhiw[dj ABCDE fkfk jdd wp;w; abcde";
-        StringTool program = new StringTool(sequency);
-        ArrayList<String> answer = program.GetCodeOrderedWords();
-        System.out.println(answer);
+        try
+        {
+            String sequency = "dhiw[dj ABCDE fkfk jdd wp;w; abcde";
+            StringTool program = new StringTool(sequency);
+            ArrayList<String> answer = program.GetCodeOrderedWords();
+        }
+        catch (Exception exception)
+        {
+            System.out.println(exception.getMessage());
+        }
     }
 }
 
