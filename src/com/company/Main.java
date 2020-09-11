@@ -9,9 +9,15 @@ public class Main
     {
         try
         {
-            String sequency = "dhiw[dj ABCDE fkfk jdd wp;w; abcde";
+            //String sequency = "dhiw[dj ABCDE fkfk jdd wp;w; abcde";
+
+            Scanner in = new Scanner(System.in);
+            System.out.print("Enter line: ");
+            String sequency = in.nextLine();
+
             StringTool program = new StringTool(sequency);
             ArrayList<String> answer = program.GetCodeOrderedWords();
+            System.out.println(answer);
         }
         catch (Exception exception)
         {
